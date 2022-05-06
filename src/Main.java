@@ -4,7 +4,18 @@ public class Main {
 //        task3();
 //        task5();
 //        task6();
-        task7();
+//        task7();
+        task8();
+    }
+    private static void task8() {
+        String str = "aabccddefgghiijjkk";
+        StringBuilder rezult = new StringBuilder();
+        for (int i = 0; i < str.length()-1; i++) {
+            if (str.toCharArray()[i]==str.toCharArray()[i+1]) {
+                rezult.append(str.toCharArray()[i++]);
+            }
+        }
+        System.out.println(rezult);
     }
     private static void task7() {
         String first = "135";
