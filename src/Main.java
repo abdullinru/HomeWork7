@@ -11,8 +11,8 @@ public class Main {
         String str = "aabccddefgghiijjkk";
         StringBuilder rezult = new StringBuilder();
         for (int i = 0; i < str.length()-1; i++) {
-            if (str.toCharArray()[i]==str.toCharArray()[i+1]) {
-                rezult.append(str.toCharArray()[i++]);
+            if (str.charAt(i)==str.charAt(i+1)) {
+                rezult.append(str.charAt(i++));
             }
         }
         System.out.println(rezult);
