@@ -4,8 +4,8 @@ public class Main {
 //        task3();
 //        task5();
 //        task6();
-//        task7();
-        task8();
+       task7();
+//        task8();
     }
     private static void task8() {
         String str = "aabccddefgghiijjkk";
@@ -22,8 +22,8 @@ public class Main {
         String second = "246";
         StringBuilder rezult = new StringBuilder();
         for (int i = 0; i < first.length(); i++) {
-            rezult.append(first.toCharArray()[i]);
-            rezult.append(second.toCharArray()[i]);
+            rezult.append(first.charAt(i));
+            rezult.append(second.charAt(i));
         }
         System.out.println("Данные строки - " + rezult);
     }
