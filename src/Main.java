@@ -3,7 +3,18 @@ public class Main {
 //        task1();
 //        task3();
 //        task5();
-        task6();
+//        task6();
+        task7();
+    }
+    private static void task7() {
+        String first = "135";
+        String second = "246";
+        StringBuilder rezult = new StringBuilder();
+        for (int i = 0; i < first.length(); i++) {
+            rezult.append(first.toCharArray()[i]);
+            rezult.append(second.toCharArray()[i]);
+        }
+        System.out.println("Данные строки - " + rezult);
     }
     private static void task6() {
         String fullName = "ivanov ivan ivanovich";
