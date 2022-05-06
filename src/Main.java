@@ -2,7 +2,23 @@ public class Main {
     public static void main(String[] args) {
 //        task1();
 //        task3();
-        task5();
+//        task5();
+        task6();
+    }
+    private static void task6() {
+        String fullName = "ivanov ivan ivanovich";
+        char[] fullNaneChar = fullName.toCharArray();
+        int indexFam = fullName.indexOf(" ");
+        int name = fullName.lastIndexOf(" ");
+        fullNaneChar[0] = Character.toUpperCase(fullNaneChar[0]);
+        for (int i = 0; i < fullNaneChar.length; i++) {
+            if (fullNaneChar[i]==' ') {
+                fullNaneChar[i + 1] = Character.toUpperCase(fullNaneChar[i + 1]);
+            }
+        }
+        System.out.print("Верное написание Ф. И. О. сотрудника с заглавных букв — ");
+        System.out.println(fullNaneChar);
+
     }
     private static void task5() {
         String fullName = "Ivanov Ivan Ivanovich";
